@@ -63,6 +63,9 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
 
             form.submit(function () {
                 var msg;
+                if (settings.initialize) {
+                    settings.initialize();
+                }
                 function successCallback(resp) {
                     if (resp.result === 'success') {
                         msg = 'We have sent you a confirmation email';
