@@ -2,7 +2,7 @@
 Mailchimp Ajax Submit
 jQuery Plugin
 Author: Siddharth Doshi
-
+Updated : Ashish Kasma
 Use:
 ===
 $('#form_id').ajaxchimp(options);
@@ -103,9 +103,9 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                     ) {
                         msg = $.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]];
                     }
-                    label.html(msg);
+                    //label.html(msg);
 
-                    label.show(2000);
+                    //label.show(2000);
                     if (settings.callback) {
                         settings.callback(resp);
                     }
@@ -137,7 +137,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 ) {
                     submitMsg = $.ajaxChimp.translations[settings.language]['submit'];
                 }
-                label.html(submitMsg).show(2000);
+                //label.html(submitMsg).show(2000);
 
                 return false;
             });
